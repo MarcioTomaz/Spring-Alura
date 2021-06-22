@@ -23,7 +23,7 @@ public class HomeController {
 		
 		List<Pedido> pedidos = Arrays.asList(pedido);
 		mv.addAttribute("pedidos", pedidos);
-		
+		//teste
 		return "home";
 	}
 
