@@ -21,7 +21,7 @@ public class HomeController {
 		
 		List<Pedido> pedidos = repository.recuperaTodosOsPedidos();
 		mv.addAttribute("pedidos", pedidos);
-		
+		//teste
 		return "home";
 	}
 	
