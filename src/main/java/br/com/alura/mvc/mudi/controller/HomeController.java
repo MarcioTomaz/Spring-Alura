@@ -14,14 +14,14 @@ import br.com.alura.mvc.mudi.repository.PedidoRepository;
 public class HomeController {
 	
 	@Autowired
-	private PedidoRepository repository;	
+	private PedidoRepository PedidoRepository;	
 
 	@GetMapping("/home")
 	public String home(Model mv) {
 		
-		List<Pedido> pedidos = repository.recuperaTodosOsPedidos();
+		List<Pedido> pedidos = PedidoRepository.findAll();
 		mv.addAttribute("pedidos", pedidos);
-		//teste
+		
 		return "home";
 	}
 	
