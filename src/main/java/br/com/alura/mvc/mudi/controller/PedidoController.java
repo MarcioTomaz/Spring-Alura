@@ -36,6 +36,6 @@ public class PedidoController {
 		Pedido pedido = requisicao.ToPedido();
 		pedidoRepository.save(pedido);
 		
-		return "pedido/formulario";		
+		return "redirect:/home";		
 	}
 }
